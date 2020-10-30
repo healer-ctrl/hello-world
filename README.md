@@ -1,5 +1,4 @@
 # hello-world
-first repository
 
 I am healer just learning how to host my code to public.
 
