@@ -1,19 +1,3 @@
-Dear Team,
+In this case, the vacuum job ran successfully and completed in approximately 20 minutes. The CANS server was manually started by the support team at 11:11 PM IST / 6:41 PM CET on Saturday, which was about 2 hours after the vacuum job completed. Therefore, no operational impact was caused by the early server start.
 
-As part of our investigation, we have identified that the recent alerts were caused by the manual start of the CANS server, which impacted the newly introduced CANS stop/start job used for vacuum operations.
-
-As expected, our standard process is as follows:
-
-All critical components (CANS, EAI, SI, BATCH) are typically stopped at 5:00 PM CET / 9:30 PM IST.
-
-Immediately after that, housekeeping/vacuum jobs are triggered.
-
-Once these complete, servers are started again, usually by 10:30 AM CET / 3:00 PM IST the next day.
-
-This timeline can vary slightly depending on the completion of the housekeeping job.
-
-In this particular case, we received multiple alerts because the CANS server was manually started by the support team at 11:11 PM IST / 6:41 PM CET on Saturday. As a result, when Autosys attempted to start the jobs the following day, it failed because CANS was already active. These failures triggered a series of alerts.
-
-Once the job statuses were manually updated to “Success,” the alerts stopped — which is expected behavior. Normally, this kind of issue doesn’t occur unless a server is started manually during the controlled stop/start window.
-
-Summary: The alerts were a direct result of the CANS server being manually started outside the usual schedule. We recommend reinforcing adherence to the planned operational sequence to prevent similar issues in the future.
+However, multiple alerts were triggered the next day when Autosys attempted to start jobs and detected that CANS was already running. Once the job statuses were manually set to “Success,” the alerts stopped — which is expected behavior.
